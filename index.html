@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 id="title">University Students Survey Form</h1>
+        <p id="description">Please take a few minutes to help us understand your university experience better.</p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="teaching-quality">How would you rate the quality of teaching in your department?</label>
+            <input type="radio" id="excellent" name="teaching-quality" value="excellent">
+            <label for="excellent">Excellent</label>
+            <input type="radio" id="good" name="teaching-quality" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="fair" name="teaching-quality" value="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" id="poor" name="teaching-quality" value="poor">
+            <label for="poor">Poor</label>
+          
+            <label for="dropdown">What is your preferred method of communication with professors?</label>
+            <select id="dropdown" name="communication-method">
+                <option value="">Select an option</option>
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+                <option value="in-person">In-Person</option>
+                <option value="online-chat">Online Chat</option>
+            </select>
+          
+            <label for="services-checkbox">Which of the following university services have you used? (Select all that apply)</label>
+            <input type="checkbox" id="counseling" name="services" value="counseling">
+            <label for="counseling">Counseling</label>
+            <input type="checkbox" id="career-advising" name="services" value="career-advising">
+            <label for="career-advising">Career advising</label>
+            <input type="checkbox" id="academic-support" name="services" value="academic-support">
+            <label for="academic-support">Academic support</label>
+            <input type="checkbox" id="health-services" name="services" value="health-services">
+            <label for="health-services">Health services</label>
+          
+            
+            <label for="facility-dropdown">Which university facility do you use most often?</label>
+            <select id="facility-dropdown" name="facility">
+                <option value="">Select an option</option>
+                <option value="library">Library</option>
+                <option value="gym">Gym</option>
+                <option value="student-union">Student Union</option>
+                <option value="cafeteria">Cafeteria</option>
+            </select>
+            
+            <label for="library-usage">What do you use the university library for? (Select all that apply)</label>
+            <input type="checkbox" id="studying" name="library-usage" value="studying">
+            <label for="studying">Studying and research</label>
+            <input type="checkbox" id="borrowing" name="library-usage" value="borrowing">
+            <label for="borrowing">Borrowing books</label>
+            <input type="checkbox" id="computers" name="library-usage" value="computers">
+            <label for="computers">Using computers and printers</label>
+            <input type="checkbox" id="relaxing" name="library-usage" value="relaxing">
+            <label for="relaxing">Relaxing and socializing</label>
+          
+            <label id="number-label" for="number">How many hours do you spend studying per week?</label>
+            <input type="number" id="number" name="hours" min="1" max="168" placeholder="Study hours in a week..." required>
+          
+
+            <label for="recommendation">How likely are you to recommend this university to a friend or family member?</label>
+            <input type="radio" id="very-likely" name="recommendation" value="very-likely">
+            <label for="very-likely">Very likely</label>
+            <input type="radio" id="likely" name="recommendation" value="likely">
+            <label for="likely">Likely</label>
+            <input type="radio" id="not-very-likely" name="recommendation" value="not-very-likely">
+            <label for="not-very-likely">Not very likely</label>
+            <input type="radio" id="not-at-all-likely" name="recommendation" value="not-at-all-likely">
+            <label for="not-at-all-likely">Not at all likely</label>
+
+            <label for="improvement-comments">What do you think the university could do to improve student life?</label>
+            <textarea id="improvement-comments" name="improvement-comments" placeholder="Enter your comments"></textarea>
+
+            <label for="new-courses-comments">Can you suggest any new courses or programs that you would like to see offered?</label>
+            <textarea id="new-courses-comments" name="new-courses-comments" placeholder="Enter your comments"></textarea>
+
+            <label for="other-comments">Do you have any other comments or suggestions for the university?</label>
+            <textarea id="other-comments" name="other-comments" placeholder="Enter your comments"></textarea>
+
+            <input type="submit" id="submit" value="Submit">
+      </form>
+     </div>
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
